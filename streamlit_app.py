@@ -29,7 +29,7 @@ streamlit.write('The user entered ', fruit_choice)
 
 # display fruitydata API response
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit choice)
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
 # normalizing the JSON data and puting data in a table
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
